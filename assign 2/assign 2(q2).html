@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Append Image Element</title>
+</head>
+<body>
+
+<button onclick="appendImage()">Append Image</button>
+
+<script>
+function appendImage() {
+  // Create an img element
+  var img = document.createElement("img");
+  
+  // Set attributes for the image (src, alt, width, height, etc.)
+  img.src = "path_to_your_image.jpg";
+  img.alt = "Description of the image";
+  img.width = 200; // Set the width of the image
+  img.height = 150; // Set the height of the image
+  
+  // Append the image to the document body or any other element
+  document.body.appendChild(img);
+}
+</script>
+
+</body>
+</html>

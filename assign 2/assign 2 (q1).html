@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Text Style</title>
+<style>
+  #college-para {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+  }
+</style>
+</head>
+<body>
+
+<p id="college-para">This is a paragraph about college. It highlights the importance of education and the opportunities it provides for personal and professional growth.</p>
+
+<button onclick="changeTextStyle()">Change</button>
+
+<script>
+function changeTextStyle() {
+  var para = document.getElementById("college-para");
+  para.style.fontFamily = "Times New Roman, serif";
+  para.style.fontSize = "20px";
+  para.style.color = "blue";
+}
+
+var words = document.getElementById("college-para").innerHTML.split(" ");
+var newContent = "";
+for (var i = 0; i < words.length; i++) {
+  newContent += "<span onmouseover='highlightWord(this)' onmouseleave='removeHighlight(this)'>" + words[i] + " " + "</span>";
+}
+document.getElementById("college-para").innerHTML = newContent;
+
+function highlightWord(element) {
+  element.style.fontWeight = "bold";
+}
+
+function removeHighlight(element) {
+  element.style.fontWeight = "normal";
+}
+</script>
+
+</body>
+</html>
