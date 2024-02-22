@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bike Showroom</title>
+</head>
+<frameset cols="20%,30%,50%">
+    <!-- Left Column Frame -->
+    <frame name="showroom">
+    <!-- showroom.html content -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Showroom</title>
+    </head>
+    <body>
+        <h2>Showroom</h2>
+        <ul>
+            <li><a href="honda.html" target="brands">Honda</a></li>
+            <li><a href="yamaha.html" target="brands">Yamaha</a></li>
+            <li><a href="suzuki.html" target="brands">Suzuki</a></li>
+        </ul>
+    </body>
+    </html>
+    
+    <!-- Middle Left Column Frame -->
+    <frame name="brands">
+    <!-- brands.html content -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Bike Brands</title>
+    </head>
+    <body>
+        <h2>Bike Brands</h2>
+        <ul>
+            <li><a href="cbr.html" target="models">CBR Series</a></li>
+            <li><a href="r1.html" target="models">R1 Series</a></li>
+            <li><a href="gsxr.html" target="models">GSXR Series</a></li>
+        </ul>
+    </body>
+    </html>
+    
+    <!-- Right Column Frame -->
+    <frame name="models">
+    <!-- models.html content -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Bike Models</title>
+    </head>
+    <body>
+        <h2>Bike Models</h2>
+        <h3>Honda CBR Series</h3>
+        <p>Specs: ...</p>
+        
+        <h3>Yamaha R1 Series</h3>
+        <p>Specs: ...</p>
+        
+        <h3>Suzuki GSXR Series</h3>
+        <p>Specs: ...</p>
+    </body>
+    </html>
+</frameset>
+</html>
